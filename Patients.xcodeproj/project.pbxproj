@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E909301323732F5700CB76E9 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E909301223732F5700CB76E9 /* TableCell.swift */; };
+		E909301523732FDD00CB76E9 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E909301423732FDD00CB76E9 /* Patient.swift */; };
+		E9093019237338C000CB76E9 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9093018237338C000CB76E9 /* R.swift */; };
 		E939EB0823732C1A00A3D770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939EB0723732C1A00A3D770 /* AppDelegate.swift */; };
 		E939EB0A23732C1A00A3D770 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939EB0923732C1A00A3D770 /* SceneDelegate.swift */; };
 		E939EB0C23732C1A00A3D770 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939EB0B23732C1A00A3D770 /* ViewController.swift */; };
@@ -15,6 +18,7 @@
 		E939EB1423732C1B00A3D770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E939EB1323732C1B00A3D770 /* Assets.xcassets */; };
 		E939EB1723732C1B00A3D770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E939EB1523732C1B00A3D770 /* LaunchScreen.storyboard */; };
 		E939EB2223732C1B00A3D770 /* PatientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939EB2123732C1B00A3D770 /* PatientsTests.swift */; };
+		E939EB2F23732D1A00A3D770 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E939EB2E23732D1A00A3D770 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E909301223732F5700CB76E9 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		E909301423732FDD00CB76E9 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		E9093018237338C000CB76E9 /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		E939EB0423732C1A00A3D770 /* Patients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patients.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E939EB0723732C1A00A3D770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E939EB0923732C1A00A3D770 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +47,7 @@
 		E939EB1D23732C1B00A3D770 /* PatientsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatientsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E939EB2123732C1B00A3D770 /* PatientsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsTests.swift; sourceTree = "<group>"; };
 		E939EB2323732C1B00A3D770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E939EB2E23732D1A00A3D770 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E909301123732EE400CB76E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E909301223732F5700CB76E9 /* TableCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E909301623732FE300CB76E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E909301423732FDD00CB76E9 /* Patient.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E9093017237338B000CB76E9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E9093018237338C000CB76E9 /* R.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		E939EAFB23732C1A00A3D770 = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +115,11 @@
 			children = (
 				E939EB0723732C1A00A3D770 /* AppDelegate.swift */,
 				E939EB0923732C1A00A3D770 /* SceneDelegate.swift */,
-				E939EB0B23732C1A00A3D770 /* ViewController.swift */,
+				E909301623732FE300CB76E9 /* Models */,
+				E9093017237338B000CB76E9 /* Utility */,
+				E909301123732EE400CB76E9 /* Views */,
+				E939EB2D23732C5D00A3D770 /* ViewModels */,
+				E939EB2C23732C4E00A3D770 /* ViewControllers */,
 				E939EB0D23732C1A00A3D770 /* Main.storyboard */,
 				E939EB1323732C1B00A3D770 /* Assets.xcassets */,
 				E939EB1523732C1B00A3D770 /* LaunchScreen.storyboard */,
@@ -100,6 +136,22 @@
 				E939EB2323732C1B00A3D770 /* Info.plist */,
 			);
 			path = PatientsTests;
+			sourceTree = "<group>";
+		};
+		E939EB2C23732C4E00A3D770 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E939EB0B23732C1A00A3D770 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E939EB2D23732C5D00A3D770 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E939EB2E23732D1A00A3D770 /* ViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E909301323732F5700CB76E9 /* TableCell.swift in Sources */,
+				E939EB2F23732D1A00A3D770 /* ViewModel.swift in Sources */,
 				E939EB0C23732C1A00A3D770 /* ViewController.swift in Sources */,
 				E939EB1223732C1A00A3D770 /* Patients.xcdatamodeld in Sources */,
+				E9093019237338C000CB76E9 /* R.swift in Sources */,
+				E909301523732FDD00CB76E9 /* Patient.swift in Sources */,
 				E939EB0823732C1A00A3D770 /* AppDelegate.swift in Sources */,
 				E939EB0A23732C1A00A3D770 /* SceneDelegate.swift in Sources */,
 			);
